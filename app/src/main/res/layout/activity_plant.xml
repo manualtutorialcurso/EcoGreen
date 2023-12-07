@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/headerapp"
+    tools:context=".PlantActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="95dp"
+        android:paddingRight="95dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/regPlantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fresa"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/labelStatisticsPlant01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area cultivada (m)"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/totalStatisticsPlant01"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="3 x 4 m2"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/labelStatisticsPlant02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Siembra"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:id="@+id/totalStatisticsPlant02"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Abr - May"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/labelStatisticsPlant03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Cosecha"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:id="@+id/totalStatisticsPlant03"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Jun - Jul"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/labelStatisticsPlant05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasto de agua x día "
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:id="@+id/totalStatisticsPlant05"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="1000 cc"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/labelStatisticsPlant06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasto de energia x día"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:id="@+id/totalStatisticsPlant06"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="6,5 kWh/dia"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/labelStatisticsPlant08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasto de fertilizante x dia"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+        <TextView
+            android:id="@+id/totalStatisticsPlant08"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="1,250 Kg"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

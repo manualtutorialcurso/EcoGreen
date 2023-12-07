@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/headerapp"
+    tools:context=".RegPlantActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="95dp"
+        android:paddingRight="95dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/regPlantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mi huerto"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/regPlantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="nueva cultivo"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelRegName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Área para mi cultivo (m)"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true"
+>
+
+            <EditText
+                android:id="@+id/edittext_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="00"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="X"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/edittext_3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="00"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="#EEEEEE"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelRegPlantQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plantas sembradas / sugeridas"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
+
+            <EditText
+                android:id="@+id/edittext_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="00"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="10"
+                android:textAlignment="center"
+                android:textColor="#2B7640"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelRegPlantWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Método de Riego"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <EditText
+            android:id="@+id/inputRegPlantWater"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:text="Manual                       ▼"
+            android:textSize="16sp"
+            android:background="#f6f6f6" />
+        <TextView
+            android:id="@+id/labelRegPlantLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Método de iluminación"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <EditText
+            android:id="@+id/inputRegMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:text="Natural                      ▼"
+            android:textSize="16sp"
+            android:background="#f6f6f6"
+            />
+
+        <TextView
+            android:id="@+id/labelRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de fertilizante"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/inputRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Contraseña"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="Compost                      ▼"
+            android:inputType="text"
+            android:background="#f6f6f6"/>
+
+        <Button
+            android:id="@+id/btnRecRegister"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="70dp"
+            android:background="#96C78A"
+            android:text="agregar al huerto"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
