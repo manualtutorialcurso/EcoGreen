@@ -50,7 +50,7 @@
             android:layout_marginTop="40dp" /-->
 
         <EditText
-            android:id="@+id/inputRegName"
+            android:id="@+id/inputFirstName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#f6f6f6"
@@ -70,7 +70,7 @@
             android:paddingBottom="5dp" /-->
 
         <EditText
-            android:id="@+id/inputRegLastName"
+            android:id="@+id/inputLastName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:inputType="text"
@@ -79,13 +79,13 @@
             android:hint="Apellido"
             android:background="#f6f6f6" />
         <EditText
-            android:id="@+id/inputRegNickName"
+            android:id="@+id/inputNameUser"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:inputType="text"
             android:layout_marginTop="5dp"
             android:textAlignment="center"
-            android:hint="Nickname"
+            android:hint="Nombre Usuario"
             android:background="#f6f6f6" />
         <!--TextView
             android:id="@+id/labelRegMail"
@@ -98,7 +98,7 @@
             android:paddingBottom="5dp" /-->
 
         <EditText
-            android:id="@+id/inputRegMail"
+            android:id="@+id/inputMail"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:inputType="text"
@@ -119,7 +119,7 @@
             android:textSize="12sp" /-->
 
         <EditText
-            android:id="@+id/inputRepRegPassword"
+            android:id="@+id/inputRegPassword"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#f6f6f6"
@@ -139,12 +139,12 @@
             android:textSize="12sp" /-->
 
         <EditText
-            android:id="@+id/inputRegPassword"
+            android:id="@+id/inputRepeatPassword"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#f6f6f6"
             android:layout_marginTop="5dp"
-            android:hint="Repetir Contraseña"
+            android:hint="Confirmar Contraseña"
             android:inputType="textPassword"
             android:textAlignment="center" />
 
@@ -166,7 +166,7 @@
                 android:text="Acepto terminos y condiciones" />
 
             <CheckBox
-                android:id="@+id/checkBoxDatos"
+                android:id="@+id/checkBoxData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -174,7 +174,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/btnRecRegister"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginTop="30dp"
@@ -182,6 +182,15 @@
             android:text="Registrar y volver"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="50sp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="#96C78A"
+            android:textColor="#ffffff"
+            app:icon="@android:drawable/ic_menu_revert" />
 
 
     </LinearLayout>

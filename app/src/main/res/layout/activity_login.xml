@@ -39,13 +39,13 @@
             android:textSize="12sp" /-->
 
         <EditText
-            android:id="@+id/inputLoginName"
+            android:id="@+id/inputNameUser"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#f6f6f6"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="5dp"
-            android:hint="Correo/Nombre/Celular/Nickname"
+            android:hint="Usuario"
             android:inputType="text"
             android:textAlignment="center" />
 
@@ -89,12 +89,22 @@
             android:textStyle="bold" /-->
 
         <Button
-            android:id="@+id/btnLoginIniciar"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:background="#96C78A"
             android:text="Iniciar"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#96C78A"
+            android:text="Registrar"
             android:textSize="18sp"
             android:textStyle="bold" />
 

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 import com.retouno.greengarden.modelos.Usuario;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +28,17 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // Obtener referencia al elemento de interfaz de usuario para registrarse
-        TextView registrarseTextView = findViewById(R.id.textViewRegistrarse);
+        Button registrarseBtn = findViewById(R.id.btnRegister);
 
         // Obtener referencia al botón de ingreso
-        Button botonIngreso = findViewById(R.id.btnLoginIniciar);
+        Button botonIngreso = findViewById(R.id.btnLogin);
 
         // Obtener referencias a los campos de texto para usuario y contraseña
-        EditText usuarioEditText = findViewById(R.id.inputLoginName);
+        EditText usuarioEditText = findViewById(R.id.inputNameUser);
         EditText passwordEditText = findViewById(R.id.inputLoginPassword);
 
         // Crear intents para las actividades de registro de usuario y principal
-        Intent registroIntent = new Intent(this, UserRegister.class);
+        Intent registroIntent = new Intent(this, RegisterActivity.class);
         Intent principalIntent = new Intent(this, Principal.class);
 
         // Leer los datos del archivo
@@ -51,12 +51,12 @@ public class Login extends AppCompatActivity {
                 // Dividir la línea en los datos del usuario separados por comas
                 String[] userData = line.split(",");
                 String nombre = userData[0];
-                String apellidos = userData[1];
-                String correo = userData[2];
-                String nickname = userData[3];
-                String passwordData = userData[4];
+                String correo = userData[1];
+                String nickname = userData[2];
+                String passwordData = userData[3];
+
                 // Crear un objeto Usuario y añadirlo a la lista de usuarios
-                Usuario nuevoUsuario = new Usuario(nombre, apellidos, correo, nickname, passwordData);
+                Usuario nuevoUsuario = new Usuario(nombre, correo, nickname, passwordData);
                 usuarios.add(nuevoUsuario);
             }
             reader.close();
@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
             // Imprimir información de los usuarios leídos en el archivo
             for (Usuario usuario : usuarios) {
                 Log.d("Usuarios",
-                        "Nombre: " + usuario.getNombre() + ", Apellidos: " + usuario.getApellidos() + ", Correo: " + usuario.getCorreo() + ", Nickname: " + usuario.getNickname() + ", Password: " + usuario.getPassword());
+                        "Nombre: " + usuario.getNombre() + ", Correo: " + usuario.getCorreo() + ", Nickname: " + usuario.getNickname() + ", Password: " + usuario.getPassword());
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -99,7 +99,7 @@ public class Login extends AppCompatActivity {
         });
 
         // Configurar el evento de clic para el enlace de registro
-        registrarseTextView.setOnClickListener(new View.OnClickListener() {
+        registrarseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Iniciar la actividad de registro de usuario
