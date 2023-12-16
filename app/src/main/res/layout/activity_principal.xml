@@ -4,75 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/headerapp"
     tools:context=".PrincipalActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:paddingLeft="95dp"
+        android:paddingRight="95dp"
+        android:layout_marginTop="12dp">
 
-
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:text="EcoGreen"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
 
-            <Button
-                android:id="@+id/btnEstadistica"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Estadística"
-                app:icon="@android:drawable/ic_menu_sort_by_size" />
-        </LinearLayout>
-
-        <Space
+        <TextView
+            android:id="@+id/mainSubtitle"
             android:layout_width="match_parent"
-            android:layout_height="48dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Bienvenido"
+            android:textAlignment="center"
+            android:textColor="#2B7640"
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
-        <LinearLayout
+
+
+        <Button
+            android:id="@+id/btnFarm"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnCategoria"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Categorias"
-                app:icon="@android:drawable/ic_menu_preferences" />
-        </LinearLayout>
-
-        <Space
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp"
+            android:text="Mi Huerto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A"/>
+        <Button
+            android:id="@+id/btnCategory"
             android:layout_width="match_parent"
-            android:layout_height="48dp" />
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Categorias"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/btnStatitics"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:orientation="horizontal">
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Estadisticas"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
 
-            <Button
-                android:id="@+id/btnConsejo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Consejos"
-                app:icon="@android:drawable/ic_menu_day" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Tutoriales"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Datos del Huerto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

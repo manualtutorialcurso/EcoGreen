@@ -19,7 +19,7 @@
             android:id="@+id/regPlantTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="configuraciones"
+            android:text="Configuraciones"
             android:textColor="#ffffff"
             android:textAlignment="center"
             android:textStyle="bold"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="datos del huerto"
+            android:text="Datos del Huerto"
             android:textAlignment="center"
             android:textColor="#2B7640"
             android:textSize="24dp"
@@ -84,7 +84,7 @@
 
         </LinearLayout>
 
-        <TextView
+        <!--TextView
             android:id="@+id/labelSettingsWaterType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:textAlignment="center"
             android:text="Manual                       ▼"
             android:textSize="16sp"
-            android:background="#f6f6f6" />
+            android:background="#f6f6f6" /-->
 
 
         <TextView
@@ -166,8 +166,8 @@
             android:background="#f6f6f6"
             />
 
-        <TextView
-            android:id="@+id/labeSettingsManure"
+        <!--TextView
+            android:id="@+id/labeSettingsTypeManure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tipo de fertilizante"
@@ -184,7 +184,7 @@
             android:textSize="16sp"
             android:text="Compost                      ▼"
             android:inputType="text"
-            android:background="#f6f6f6"/>
+            android:background="#f6f6f6"/-->
 
 
         <TextView
@@ -211,11 +211,39 @@
             android:id="@+id/btnRecRegister"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginTop="70dp"
-            android:background="#96C78A"
-            android:text="guardar huerto"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#96C78A"
+            android:text="Guardar Datos"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="630dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReturn"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                app:icon="@android:drawable/ic_menu_revert" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

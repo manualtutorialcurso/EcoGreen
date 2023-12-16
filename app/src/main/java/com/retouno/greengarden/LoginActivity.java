@@ -8,14 +8,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.security.Principal;
 import java.util.ArrayList;
 
 import com.retouno.greengarden.modelos.Usuario;
@@ -39,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // Crear intents para las actividades de registro de usuario y principal
         Intent registroIntent = new Intent(this, RegisterActivity.class);
-        Intent principalIntent = new Intent(this, Principal.class);
+        Intent principalIntent = new Intent(this, PrincipalActivity.class);
 
         // Leer los datos del archivo
         File file = new File(getFilesDir(), "datos.txt");
@@ -54,9 +52,10 @@ public class LoginActivity extends AppCompatActivity {
                 String correo = userData[1];
                 String nickname = userData[2];
                 String passwordData = userData[3];
+                String apellido = userData[2];
 
                 // Crear un objeto Usuario y añadirlo a la lista de usuarios
-                Usuario nuevoUsuario = new Usuario(nombre, correo, nickname, passwordData);
+                Usuario nuevoUsuario = new Usuario(nombre, apellido, correo, nickname, passwordData);
                 usuarios.add(nuevoUsuario);
             }
             reader.close();

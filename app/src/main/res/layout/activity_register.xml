@@ -49,16 +49,6 @@
             android:paddingBottom="5dp"
             android:layout_marginTop="40dp" /-->
 
-        <EditText
-            android:id="@+id/inputFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="#f6f6f6"
-            android:layout_marginTop="30sp"
-            android:hint="Nombre"
-            android:inputType="text"
-            android:textAlignment="center" />
-
         <!--TextView
             android:id="@+id/labelRegLastName"
             android:layout_width="match_parent"
@@ -69,6 +59,17 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp" /-->
 
+
+
+        <EditText
+            android:id="@+id/inputFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30sp"
+            android:background="#f6f6f6"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textAlignment="center" />
         <EditText
             android:id="@+id/inputLastName"
             android:layout_width="match_parent"
@@ -78,6 +79,7 @@
             android:textAlignment="center"
             android:hint="Apellido"
             android:background="#f6f6f6" />
+
         <EditText
             android:id="@+id/inputNameUser"
             android:layout_width="match_parent"

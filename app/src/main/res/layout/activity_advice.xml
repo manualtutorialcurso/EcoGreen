@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/headerapp"
     tools:context=".AdviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="12dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consejos"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textConsejos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Aquí van los consejos" />
+
+        <!--ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_launcher_background" /-->
+
+        <Button
+            android:id="@+id/btnMainFarm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:text="Mi primer huerto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A"/>
+
+        <Button
+            android:id="@+id/btnMainStatitics"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Tipo de suelos"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+
+        <Button
+            android:id="@+id/btnMainTips"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Compost y vermicompost"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+        <Button
+            android:id="@+id/btnTips04"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Remedios"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+        <Button
+            android:id="@+id/btnTips05"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:text="Plagas y enfermedades"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#96C78A" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textAlignment="center"
+            app:icon="@android:drawable/ic_menu_revert" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

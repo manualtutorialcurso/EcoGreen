@@ -13,33 +13,45 @@ public class PrincipalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        Button btnEstadistica = findViewById(R.id.btnEstadistica);
-        Button btnCategoria = findViewById(R.id.btnCategoria);
-        Button btnConsejo = findViewById(R.id.btnConsejo);
-        Intent intent1 = new Intent(this, SettingsActivity.class);
+        Button btnEstadistica = findViewById(R.id.btnStatitics);
+        Button btnCategoria = findViewById(R.id.btnCategory);
+        Button btnConsejo = findViewById(R.id.btnAdvice);
+        Button btnConfiguracion = findViewById(R.id.btnSettings);
+
+        Intent intent1 = new Intent(this, StatisticsActivity.class);
         Intent intent2 = new Intent(this, ServiceRegisterActivity.class);
         Intent intent3 = new Intent(this, AdviceActivity.class);
+        Intent intent4 = new Intent(this, SettingsActivity.class);
 
         //Boton Estadistica
         btnEstadistica.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(intent1);
             }
         });
 
         btnCategoria.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(intent2);
             }
         });
 
         btnConsejo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(intent3);
             }
         });
+
+        btnConfiguracion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent4);
+            }
+        });
+
+
     }
 }

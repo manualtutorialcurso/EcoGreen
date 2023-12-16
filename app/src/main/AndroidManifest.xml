@@ -13,6 +13,12 @@
         android:theme="@style/Theme.GreenGarden"
         tools:targetApi="31">
         <activity
+            android:name=".ServiceRegisterItem2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceRegisterItem1Activity"
+            android:exported="false" />
+        <activity
             android:name=".ServiceRegisterActivity"
             android:exported="false" />
         <activity
@@ -63,7 +69,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
     </application>
 
 </manifest>

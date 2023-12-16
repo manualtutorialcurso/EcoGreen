@@ -33,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
         final Intent intent1 = new Intent(this, LoginActivity.class);
         Button botonRegistro = findViewById(R.id.btnRegister);
         final EditText nombre = findViewById(R.id.inputFirstName);
+        final EditText apellido = findViewById(R.id.inputLastName);
         final EditText correo = findViewById(R.id.inputMail);
         final EditText nickname = findViewById(R.id.inputNameUser);
         final EditText password1 = findViewById(R.id.inputRegPassword);
@@ -50,10 +51,11 @@ public class RegisterActivity extends AppCompatActivity {
                     // El RadioButton está activado
 
                     // Revisar si los campos están diligenciados
-                    if (!nombre.getText().toString().isEmpty() && !correo.getText().toString().isEmpty() &&
-                            !nickname.getText().toString().isEmpty() && !password1.getText().toString().isEmpty() &&
-                            !password2.getText().toString().isEmpty()) {
+                    if (!nombre.getText().toString().isEmpty() && !apellido.getText().toString().isEmpty() && !correo.getText().toString().isEmpty() &&
+                            !nickname.getText().toString().isEmpty() && !password1.getText().toString().isEmpty() && !password2.getText().toString().isEmpty()) {
+
                         // Revisar si las contraseñas coinciden
+
                         if (password1.getText().toString().equals(password2.getText().toString())) {
                             // Validar si los datos ya existen en el archivo
                             if (datosExisten(correo.getText().toString(), nickname.getText().toString(), nombre.getText().toString())) {
@@ -62,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                             } else {
                                 // Los datos no existen, realizar el registro
                                 // Crear un nuevo objeto Usuario
-                                Usuario nuevoUsuario = new Usuario(nombre.getText().toString(), correo.getText().toString(), nickname.getText().toString(), password1.getText().toString());
+                                Usuario nuevoUsuario = new Usuario(nombre.getText().toString(), apellido.getText().toString(), correo.getText().toString(), nickname.getText().toString(), password1.getText().toString());
                                 // Guardar los datos en el archivo
                                 guardarRegistro(nuevoUsuario);
                                 // Ir al activity de inicio de sesión
