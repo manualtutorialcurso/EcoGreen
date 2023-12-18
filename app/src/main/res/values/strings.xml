@@ -15,6 +15,27 @@
     <string name="check_data">Acepto tratamiento de datos</string>
     <string name="btn_backregister">Registrarse y Volver</string>
 
+    <string name="menubtn_water">Acueducto</string>
+    <string name="menubtn_energy">Energia</string>
+    <string name="menubtn_manure">Fertilizante</string>
+
+    <string name="menunav_home">
+        <font color="#333333">Inicio</font>
+    </string>
+    <string name="menunav_farm">
+        <font color="#333333">Huerto</font>
+    </string>
+    <string name="menunav_bills">
+        <font color="#333333">Recibos</font>
+    </string>
+    <string name="menunav_statistics">
+        <font color="#333333">Estadisticas</font>
+    </string>
+    <string name="menunav_settings">
+        <font color="#333333">Configuracion</font>
+    </string>
+
+
 
 
     <string name="menu_item1">Perfil</string>

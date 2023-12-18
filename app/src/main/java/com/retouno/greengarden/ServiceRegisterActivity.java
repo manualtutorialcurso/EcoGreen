@@ -13,12 +13,17 @@ public class ServiceRegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_register);
+
+
         Button botonRegresar = findViewById(R.id.btnReturn);
-        Button btnElectricidad = findViewById(R.id.buttonElectricidad);
-        Button btnAgua = findViewById(R.id.buttonAgua);
+        Button btnElectricidad = findViewById(R.id.btnElectric);
+        Button btnAgua = findViewById(R.id.btnWater);
+        Button btnAbono = findViewById(R.id.btnManure);
+
         Intent intent1 = new Intent(this, PrincipalActivity.class);
         Intent intent2 = new Intent(this, ServiceRegisterItem1Activity.class);
         Intent intent3 = new Intent(this, ServiceRegisterItem2Activity.class);
+
 
         //Boton Regresar
         botonRegresar.setOnClickListener(new View.OnClickListener() {
@@ -43,5 +48,8 @@ public class ServiceRegisterActivity extends AppCompatActivity {
                 startActivity(intent3);
             }
         });
+
+        //Boton Registro de Abono
+
     }
 }
