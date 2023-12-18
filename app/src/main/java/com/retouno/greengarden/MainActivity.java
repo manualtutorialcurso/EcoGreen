@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -17,6 +20,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Menu settings
+        public boolean onCreateOptionsMenu(Menu menu){
+            getMenuInflater().inflate(R.menu.settings, menu);
+            return true;
+        }
+
+        public Boolean onOptionItemSelected(MenuItem item){
+            int id = item.getItemId();
+
+           if (id == R.id.menu_item1) {
+                Toast.makeText(this, "Perfil", Toast.LENGTH_SHORT).show();
+
+            }else if(id == R.id.menu_item2){
+                Toast.makeText(this, "Cerrar Sesión", Toast.LENGTH_SHORT).show();
+            }
+            return super.onOptionsItemSelected(item);
+        }
+
+    */
         // Crear archivo para usuarios y escribir los datos
         File file1 = new File(getFilesDir(), "datos.txt");
         try {

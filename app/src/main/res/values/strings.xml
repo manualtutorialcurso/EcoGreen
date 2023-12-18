@@ -1,4 +1,23 @@
 <resources>
-    <string name="app_name">GreenGarden</string>
-    <string name="mi_huerto">Mi Huerto</string>
+    <string name="app_name">EcoGreen</string>
+    <string name="text_farm">Mi Huerto</string>
+    <string name="input_user">Usuario</string>
+    <string name="input_pass">Contraseña</string>
+    <string name="btn_login">Iniciar</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="text_register">Registro</string>
+    <string name="input_name">Nombre</string>
+    <string name="input_lastname">Apellido</string>
+    <string name="input_nameuser">Nombre Usuario</string>
+    <string name="input_email">Correo</string>
+    <string name="input_repeatpass">Confirmar Contraseña</string>
+    <string name="check_terms">Acepto terminos y condiciones</string>
+    <string name="check_data">Acepto tratamiento de datos</string>
+    <string name="btn_backregister">Registrarse y Volver</string>
+
+
+
+    <string name="menu_item1">Perfil</string>
+    <string name="menu_item2">Cerrar Sesión</string>
+
 </resources>
