@@ -22,33 +22,24 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EcoGreen"
+            android:text="Bienvenido"
             android:textColor="#ffffff"
             android:textAlignment="center"
             android:textStyle="bold"
             android:layout_marginBottom="40dp"
             android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/mainSubtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Bienvenido"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="24dp"
-            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnFarm"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="50dp"
-            android:text="Mi Huerto"
-            android:textStyle="bold"
+            android:layout_marginTop="30dp"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A"/>
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/text_farm" />
 
 
         <Button
@@ -56,39 +47,44 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Categorias"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/text_category"/>
 
         <Button
             android:id="@+id/btnStatitics"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Estadisticas"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/text_statistics" />
 
         <Button
             android:id="@+id/btnAdvice"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Tutoriales"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/text_advice"/>
+
         <Button
             android:id="@+id/btnSettings"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Datos del Huerto"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/text_settings" />
 
         <!--ImageView
             android:id="@+id/imageView7"
@@ -100,14 +96,14 @@
 
     </LinearLayout>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
+    <!--com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/green_dark"
         android:gravity="bottom"
         app:fabAlignmentMode="end"
-        app:fabCradleMargin="10dp"
+        app:fabCradleMargin="0dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:hideOnScroll="true">
 
@@ -117,7 +113,7 @@
             android:layout_height="match_parent"
             app:menu="@menu/bottom_navbar" />
 
-    </com.google.android.material.bottomappbar.BottomAppBar>
+    </com.google.android.material.bottomappbar.BottomAppBar-->
 
 
 

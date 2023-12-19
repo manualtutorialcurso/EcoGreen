@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GreenGarden"
         tools:targetApi="31">
         <activity
+            android:name=".ServiceRegisterItem3Activity"
+            android:exported="false" />
+        <activity
             android:name=".ServiceRegisterItem2Activity"
             android:exported="false" />
         <activity

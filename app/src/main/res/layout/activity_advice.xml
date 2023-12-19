@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
@@ -20,8 +20,9 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Consejos"
+            android:text="@string/text_advice"
             android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="20dp" />
@@ -47,74 +48,71 @@
         <Button
             android:id="@+id/btnMainFarm"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="50dp"
-            android:text="Mi primer huerto"
-            android:textStyle="bold"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A"/>
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="Mi primer huerto" />
 
         <Button
             android:id="@+id/btnMainStatitics"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Tipo de suelos"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="Tipo de suelos" />
 
         <Button
             android:id="@+id/btnMainTips"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Compost y vermicompost"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="Compost y vermicompost" />
         <Button
             android:id="@+id/btnTips04"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Remedios"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="Remedios" />
         <Button
             android:id="@+id/btnTips05"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:text="Plagas y enfermedades"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:backgroundTint="#96C78A" />
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            android:text="Plagas y enfermedades" />
 
         <Button
             android:id="@+id/btnReturn"
-            android:layout_width="50sp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:textAlignment="center"
-            app:icon="@android:drawable/ic_menu_revert" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_light"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/green_dark"
+            android:text="@string/btn_return" />
 
     </LinearLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

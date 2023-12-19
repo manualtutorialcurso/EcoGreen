@@ -27,13 +27,13 @@
             android:textStyle="bold"
             android:textSize="20dp" />
 
-        <ImageView
+        <!--ImageView
             android:id="@+id/imageView7"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/ic_launcher_background" /-->
 
         <TextView
             android:id="@+id/labelStatisticsPlant01"
@@ -144,6 +144,8 @@
             android:textColor="#2B7640"
             android:textSize="20dp"
             android:textStyle="bold"/>
+
+
 
     </LinearLayout>
 </RelativeLayout>

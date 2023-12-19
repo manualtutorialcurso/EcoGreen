@@ -18,11 +18,12 @@ public class ServiceRegisterActivity extends AppCompatActivity {
         Button botonRegresar = findViewById(R.id.btnReturn);
         Button btnElectricidad = findViewById(R.id.btnElectric);
         Button btnAgua = findViewById(R.id.btnWater);
-        Button btnAbono = findViewById(R.id.btnManure);
+        Button btnFertilizante = findViewById(R.id.btnManure);
 
         Intent intent1 = new Intent(this, PrincipalActivity.class);
         Intent intent2 = new Intent(this, ServiceRegisterItem1Activity.class);
         Intent intent3 = new Intent(this, ServiceRegisterItem2Activity.class);
+        Intent intent4 = new Intent(this, ServiceRegisterItem3Activity.class);
 
 
         //Boton Regresar
@@ -49,7 +50,14 @@ public class ServiceRegisterActivity extends AppCompatActivity {
             }
         });
 
-        //Boton Registro de Abono
+        //Boton Registro de Fertilizante
+        btnFertilizante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent4);
+            }
+        });
+
 
     }
 }

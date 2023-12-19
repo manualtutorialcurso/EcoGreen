@@ -210,40 +210,25 @@
         <Button
             android:id="@+id/btnRecRegister"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="48dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="#96C78A"
+            android:backgroundTint="@color/green_dark"
+            android:textColor="@color/white"
             android:text="Guardar Datos"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="630dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <LinearLayout
+        <Button
+            android:id="@+id/btnReturn"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnReturn"
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                app:icon="@android:drawable/ic_menu_revert" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_light"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/green_dark"
+            android:text="@string/btn_return" />
 
     </LinearLayout>
+   
 </RelativeLayout>

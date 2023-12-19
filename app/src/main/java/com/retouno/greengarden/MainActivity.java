@@ -72,10 +72,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Crear archivo para registro de consejos
-        File file4 = new File(getFilesDir(), "consejos.txt");
+        // Crear archivo para registro de fertilizante
+        File file4 = new File(getFilesDir(), "fertilizante.txt");
         try {
             FileWriter writer = new FileWriter(file4);
+            writer.append("15,150000,enero\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Crear archivo para registro de consejos
+        File file5 = new File(getFilesDir(), "consejos.txt");
+        try {
+            FileWriter writer = new FileWriter(file5);
 
             // Lista de consejos para ahorrar agua y electricidad en un array
             String[] consejos = {

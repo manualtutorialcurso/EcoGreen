@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">EcoGreen</string>
     <string name="text_farm">Mi Huerto</string>
+    <string name="text_category">Categorias</string>
+    <string name="text_bills">Recibos</string>
+    <string name="text_statistics">Estadisticas</string>
+    <string name="text_settings">Configuracion</string>
+    <string name="text_advice">Consejos</string>
     <string name="input_user">Usuario</string>
     <string name="input_pass">Contraseña</string>
     <string name="btn_login">Iniciar</string>
@@ -13,7 +18,9 @@
     <string name="input_repeatpass">Confirmar Contraseña</string>
     <string name="check_terms">Acepto terminos y condiciones</string>
     <string name="check_data">Acepto tratamiento de datos</string>
-    <string name="btn_backregister">Registrarse y Volver</string>
+    <string name="btn_backregister">Registrarse</string>
+    <string name="btn_return">Regresar</string>
+
 
     <string name="menubtn_water">Acueducto</string>
     <string name="menubtn_energy">Energia</string>
@@ -34,9 +41,6 @@
     <string name="menunav_settings">
         <font color="#333333">Configuracion</font>
     </string>
-
-
-
 
     <string name="menu_item1">Perfil</string>
     <string name="menu_item2">Cerrar Sesión</string>

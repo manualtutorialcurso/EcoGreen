@@ -243,13 +243,11 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="108dp" />
+            android:layout_height="80dp" />
 
 
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
+
 
         <TableLayout
             android:id="@+id/myTableLayout"
@@ -287,34 +285,18 @@
 
         </TableLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="630dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <LinearLayout
+        <Button
+            android:id="@+id/btnReturn"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnReturn"
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                app:icon="@android:drawable/ic_menu_revert" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green_light"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/green_dark"
+            android:text="@string/btn_return" />
 
     </LinearLayout>
+
+
 </RelativeLayout>
