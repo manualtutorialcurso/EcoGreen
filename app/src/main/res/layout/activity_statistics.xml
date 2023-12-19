@@ -6,221 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/headerapp"
     tools:context=".StatisticsActivity">
-
-    <!--LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="95dp"
-        android:paddingRight="95dp"
-        android:layout_marginTop="10dp">
-
-
-        <TextView
-            android:id="@+id/regPlantTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="estadisticas"
-            android:textColor="#ffffff"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/regPlantName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="totales cultivo"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="24dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/labelStatistics01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Espacio usado en (m)"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:layout_marginTop="40dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics01"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="10 x 15 m2"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics02"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Plantas sembradas"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics02"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="20 Plantas"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics03"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Especies sembradas"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics03"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="1 Especie"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics04"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agua x dia"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics04"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="1000 cc/día"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics05"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Costo agua mes"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics05"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="$ 36.000"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics06"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Energia empleada"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics06"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="6,5 kWh/dia"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/labelStatistics07"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Costo energia mes"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics07"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="$ 23.500"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics08"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fertilizante utilizado al dia"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics08"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="15000 kg"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics09"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Costo fertilizante"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:paddingTop="15dp" />
-
-        <TextView
-            android:id="@+id/totalStatistics09"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="$ 250.000"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/labelStatistics10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cosecha proxima en)"
-            android:textAlignment="center"
-            android:textSize="12sp"
-            android:layout_marginTop="15px"/>
-
-        <TextView
-            android:id="@+id/totalStatistics10"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="Jun - Jul"
-            android:textAlignment="center"
-            android:textColor="#2B7640"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-    </LinearLayout-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -228,7 +13,6 @@
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:layout_marginTop="0dp" >
-
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
@@ -239,7 +23,6 @@
             android:textStyle="bold"
             android:textSize="23dp"
             android:text="Estadisticas" />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="80dp" />
@@ -249,7 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:stretchColumns="*">
-
             <TableRow>
                 <TextView
                     android:text="Mes"
