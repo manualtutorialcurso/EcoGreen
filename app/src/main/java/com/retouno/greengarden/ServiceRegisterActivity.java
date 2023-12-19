@@ -14,7 +14,6 @@ public class ServiceRegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_register);
 
-
         Button botonRegresar = findViewById(R.id.btnReturn);
         Button btnElectricidad = findViewById(R.id.btnElectric);
         Button btnAgua = findViewById(R.id.btnWater);
@@ -57,7 +56,6 @@ public class ServiceRegisterActivity extends AppCompatActivity {
                 startActivity(intent4);
             }
         });
-
-
     }
+
 }

@@ -440,4 +440,5 @@ public class StatisticsActivity extends AppCompatActivity {
         }
         return sum / fertilizanteList.size();
     }
+
 }

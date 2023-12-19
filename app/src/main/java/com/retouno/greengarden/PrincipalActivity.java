@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 public class PrincipalActivity extends AppCompatActivity {
-
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +53,6 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intent4);
             }
         });
-
     }
 
 }

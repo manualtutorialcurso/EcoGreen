@@ -20,7 +20,6 @@ import com.retouno.greengarden.modelos.Electricidad;
 
 public class ServiceRegisterItem2Activity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,4 +129,5 @@ public class ServiceRegisterItem2Activity extends AppCompatActivity {
 
         return false; // Error al guardar los datos
     }
+
 }

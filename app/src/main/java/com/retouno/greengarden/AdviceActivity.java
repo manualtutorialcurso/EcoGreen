@@ -72,6 +72,4 @@ public class AdviceActivity extends AppCompatActivity {
         String consejo = consejosList.get(index);
         consejos.setText(consejo);
     }
-
-
 }

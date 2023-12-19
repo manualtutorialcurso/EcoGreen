@@ -35,4 +35,5 @@ public class Electricidad {
     public void setMes(String mes) {
         this.mes = mes;
     }
+
 }
