@@ -32,10 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="80dp" />
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Space
@@ -140,29 +139,26 @@
                     android:inputType="textPersonName" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <Button
                 android:id="@+id/btnRegistrarElectricidad"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="70dp"
-                android:backgroundTint="#195A37"
-                android:text="Registrar"
-                android:textSize="18sp"
-                android:textStyle="normal" />
+                style="@style/BtnNormalDark"
+                android:text="Registrar"  />
 
             <Button
                 android:id="@+id/btnReturn"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/green_light"
-                android:textSize="18sp"
-                android:textStyle="normal"
-                android:textColor="@color/green_dark"
+                style="@style/BtnNormalLight"
                 android:text="@string/btn_return" />
 
         </LinearLayout>

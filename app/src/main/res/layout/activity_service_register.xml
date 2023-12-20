@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/headerapp"
     tools:context=".ServiceRegisterActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +20,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="80dp"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="23dp"
@@ -26,40 +28,23 @@
         <Button
             android:id="@+id/btnWater"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="@color/green_dark"
-            android:textSize="18sp"
-            android:textStyle="normal"
+            style="@style/BtnNormalDark"
             android:text="@string/menubtn_water" />
         <Button
             android:id="@+id/btnElectric"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/green_dark"
-            android:textSize="18sp"
-            android:textStyle="normal"
+            style="@style/BtnNormalDark"
             android:text="@string/menubtn_energy" />
         <Button
             android:id="@+id/btnManure"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/green_dark"
-            android:textSize="18sp"
-            android:textStyle="normal"
+            style="@style/BtnNormalDark"
             android:text="@string/menubtn_manure" />
 
         <Button
             android:id="@+id/btnReturn"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/green_light"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/green_dark"
+            style="@style/BtnNormalLight"
             android:text="@string/btn_return" />
     </LinearLayout>
 

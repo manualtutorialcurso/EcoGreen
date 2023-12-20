@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="60dp"
             android:textSize="28sp"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -36,64 +36,35 @@
         <Button
             android:id="@+id/btnMainFarm"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalBase"
             android:text="Mi primer huerto" />
 
         <Button
             android:id="@+id/btnMainStatitics"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalBase"
             android:text="Tipo de suelos" />
 
         <Button
             android:id="@+id/btnMainTips"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalBase"
             android:text="Compost y vermicompost" />
         <Button
             android:id="@+id/btnTips04"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalBase"
             android:text="Remedios" />
         <Button
             android:id="@+id/btnTips05"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalBase"
             android:text="Plagas y enfermedades" />
         <Button
             android:id="@+id/btnReturn"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/green_light"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/green_dark"
+            style="@style/BtnNormalLight"
+            android:layout_marginTop="30dp"
             android:text="@string/btn_return" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

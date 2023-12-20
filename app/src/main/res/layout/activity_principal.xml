@@ -26,56 +26,35 @@
             android:textSize="23dp"
             android:text="Bienvenido"
             android:layout_marginBottom="50dp" />
+
         <Button
             android:id="@+id/btnFarm"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="30dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnBigBase"
             android:text="@string/text_farm" />
         <Button
             android:id="@+id/btnCategory"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalDark"
             android:text="@string/text_category"/>
         <Button
             android:id="@+id/btnStatitics"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalDark"
             android:text="@string/text_statistics" />
         <Button
             android:id="@+id/btnAdvice"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalDark"
             android:text="@string/text_advice"/>
+
         <Button
             android:id="@+id/btnSettings"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="5dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/green_dark"
+            style="@style/BtnNormalDark"
             android:text="@string/text_settings" />
+
+
 
         <!--ImageView
             android:id="@+id/imageView7"
